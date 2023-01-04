@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body,html{
+    background: rgb(161, 161, 249);
+    /* background: url(img/背景.jpg) no-repeat; */
+}
+.box{
+    /* 上下200px 左右auto */
+    margin: 300px auto;
+
+    width: 434px;
+    height: 190px;
+    /* background: white; */
+}
+.role{
+    /* 百分比基于父元素计算 */
+    width: 25%;
+    height: 100%;
+    /* float浮动 向左边排序 */
+    float: left;
+    /* background: rgb(155, 139, 139); */
+    /* 背景不重复 */
+    background-repeat: no-repeat;
+    margin-top: 30px;
+}
+/* role的第一个子元素 */
+.role:nth-child(1){
+    /* 背景图片 */
+    background-image: url(img/swk.png);
+    /* steps(8)分8步移动 infinite无限循环 */
+    animation: swk 1.4s steps(8) infinite;
+}
+/* 动画 */
+@keyframes swk{
+    0%{
+        background-position-x: 0px;
+    }
+    100%{
+        background-position-x: -850px;
+    }
+}
+
+/* role的第二个子元素 */
+.role:nth-child(2){
+    background-image: url(img/猪八戒.jpg);
+    /* steps(8)分8步移动 infinite无限循环 */
+    animation: zbj 1.4s steps(8) infinite;
+}
+/* 动画 */
+@keyframes zbj{
+    0%{
+        background-position-x: 0px;
+    }
+    100%{
+        background-position-x: -850px;
+    }
+}
+
+/* role的第三个子元素 */
+.role:nth-child(3){
+    background-image: url(img/唐僧.jpg);
+    animation: ts 1.4s steps(8) infinite;
+}
+/* 动画 */
+@keyframes ts{
+    0%{
+        background-position-x: 0px;
+    }
+    100%{
+        background-position-x: -850px;
+    }
+}
+/* role的第四个子元素 */
+.role:nth-child(4){
+    background-image: url(img/沙僧.jpg);
+    animation: ss 1.4s steps(8) infinite;
+}
+/* 动画 */
+@keyframes ss{
+    0%{
+        background-position-x: 0px;
+    }
+    100%{
+        background-position-x: -850px;
+    }
+}
